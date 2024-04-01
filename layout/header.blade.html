@@ -1,0 +1,96 @@
+   <!--====== HEADER PART START ======-->
+
+   <header class="header-area">
+       <div class="navigation ">
+           <div class="container">
+               <div class="row">
+                   <div class="w-full">
+                       <nav class="flex items-center justify-between navbar navbar-expand-md">
+                           <a class="mr-4 navbar-brand" href="index.html">
+                               <img src="/images/logo2.png" alt="Logo" class="w-40 h-28">
+                           </a>
+
+                           <button id="toggleBtn" class="block navbar-toggler focus:outline-none md:hidden" type="button"
+                               data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                               <span class="toggler-icon"></span>
+                               <span class="toggler-icon"></span>
+                               <span class="toggler-icon"></span>
+                           </button>
+
+
+
+                           <div class="hidden md:flex"
+                               id="navbarOne">
+                               <ul
+                                   class="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex">
+                                   <!-- flex flex-row mx-auto my-0 navbar-nav -->
+                                   <li class="nav-item active">
+                                       <a class="page-scroll " href="#home">HOME</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="page-scroll" href="#service">PORTOFOLIO</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="page-scroll" href="#pricing">EXPERIENCE</a>
+                                   </li>
+                                   <li class="nav-item">
+                                       <a class="page-scroll" href="#testimonial">ORGANIZATION</a>
+                                   </li>
+                               </ul>
+                           </div>
+
+                           <div class="items-center justify-end hidden navbar-social lg:flex">
+                               <span class="mr-4 font-bold text-gray-900 uppercase">FOLLOW US</span>
+                               <ul class="flex footer-social">
+                                   <li><a href="https://web.facebook.com/estomihi.pangaribuan.7/"><i class="lni-facebook-filled"></i></a></li>
+                                   <li><a href="https://www.instagram.com/estomihipgrb/"><i class="lni-instagram-original"></i></a></li>
+                               </ul>
+                           </div>
+                       </nav> <!-- navbar -->
+                   </div>
+               </div> <!-- row -->
+           </div> <!-- container -->
+       </div> <!-- navgition -->
+
+       <div id="home" class="relative z-10 header-hero" style="background-image: url(/images/header-bg.jpg)">
+           <div class="container">
+               <div class="justify-center row">
+                   <div class="w-full lg:w-5/6 xl:w-2/3">
+                       <div class="pt-48 pb-64 text-center header-content">
+                           <h3 class="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl">Eksplorasi
+                               Kreativitasmu dengan Layanan Print Unggulan Kami</h3>
+                           <p class="px-5 mb-10 text-xl text-gray-700">Dari print kertas hingga kalender, wujudkan ide
+                               dan momen Anda dengan layanan cetak yang cepat dan berkualitas</p>
+                           <ul class="flex flex-wrap justify-center">
+                               <li><a class="mx-3 main-btn gradient-btn" href="#contact">GET IN TOUCH</a></li>
+                               <li><a class="mx-3 main-btn video-popup"
+                                       href="">WATCH THE VIDEO <i
+                                           class="ml-2 lni-play"></i></a></li>
+                           </ul>
+                       </div> <!-- header content -->
+                   </div>
+               </div> <!-- row -->
+           </div> <!-- container -->
+           <div class="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
+               <img src="/images/header-shape.svg" alt="shape">
+           </div>
+       </div> <!-- header content -->
+   </header>
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var toggleBtn = document.getElementById("toggleBtn");
+        var navbarOne = document.getElementById("navbarOne");
+
+        if (toggleBtn && navbarOne) {
+            navbarOne.classList.add("hidden"); // Tambahkan kelas 'hidden' saat halaman dimuat
+
+            toggleBtn.addEventListener("click", function () {
+                navbarOne.classList.toggle("hidden"); // Toggling the 'hidden' class
+            });
+        }
+    });
+</script>
+
+   <!--====== HEADER PART ENDS ======-->
